@@ -23,8 +23,9 @@ int main(void)
 		if (len > 0) {
 			buffer[len] = '\0';
 			int value = -1;
-			sscanf(buffer, "%d", &value);
-			printf("ADC Value: %d\n", value);
+			//sscanf(buffer, "%d", &value); mistake from function sscanf
+			//printf("ADC Value: %d\n", value);
+			printf("ADC Value: %s\n", buffer);
 		} else {
 			perror("read ADC device:");
 			return 1;
